@@ -33,6 +33,7 @@ function openLightbox(sourceImage) {
   lightboxImage.alt = sourceImage.alt;
   lightbox.classList.add('is-open');
   lightbox.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('no-scroll');
 }
 
 function closeLightbox() {
@@ -44,6 +45,7 @@ function closeLightbox() {
   lightbox.setAttribute('aria-hidden', 'true');
   lightboxImage.src = '';
   lightboxImage.alt = '';
+  document.body.classList.remove('no-scroll');
 }
 
 galleryImages.forEach((image) => {
