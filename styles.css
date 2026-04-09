@@ -536,13 +536,31 @@ footer {
     padding: 0.35rem 0.65rem;
   }
 
+  .hero__highlights {
+    display: none;
+  }
+
   .kicker {
     font-size: 0.66rem;
     letter-spacing: 0.06em;
   }
 
+  .hero__lead {
+    font-size: 0.92rem;
+    margin-bottom: 0.75rem;
+  }
+
   .hero__footnote {
-    font-size: 0.64rem;
+    display: none;
+  }
+
+  .hero__cta .btn--primary {
+    min-height: 52px;
+    font-size: 0.98rem;
+  }
+
+  .hero__cta .btn--ghost {
+    display: none;
   }
 
   .cta,
