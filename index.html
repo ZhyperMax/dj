@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sonido 100 para casamientos, cumpleaños y todo tipo de eventos. Música, iluminación y pantalla gigante."
+    />
+    <title>Sonido 100 | Música para Eventos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="menu" id="menu">
+      <div class="menu__wrap">
+        <a class="brand" href="#inicio">Sonido <span>100</span></a>
+        <nav class="nav" aria-label="Secciones principales">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#paquetes">Paquetes</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero__box">
+          <p class="kicker">DJ - Música - Iluminación - Pantalla Gigante</p>
+          <h1>Sonido profesional para bodas, cumpleaños y fiestas inolvidables</h1>
+          <p>
+            Lleva tu evento a otro nivel con mezclas en vivo, animación, luces inteligentes y un show diseñado para tu público.
+            One page moderna, oscura y optimizada para móviles.
+          </p>
+          <div class="cta">
+            <a class="btn btn--primary" href="#contacto">Solicitar presupuesto</a>
+            <a class="btn btn--ghost" href="#paquetes">Ver paquetes</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Música y DJ</h3>
+            <p class="muted">Mix en vivo adaptado al tipo de fiesta y público.</p>
+          </article>
+          <article class="card">
+            <h3>Iluminación</h3>
+            <p class="muted">Luces rítmicas, ambientación LED y efectos de pista.</p>
+          </article>
+          <article class="card">
+            <h3>Pantalla gigante</h3>
+            <p class="muted">Visuales y videos para sumar impacto a tu evento.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="paquetes">
+        <h2>Paquetes</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Esencial</h3>
+            <p class="muted">Hasta 4 horas - DJ + sonido básico + luces</p>
+            <a class="btn btn--primary" href="https://wa.me/5493874075595" target="_blank" rel="noopener noreferrer">Consultar presupuesto</a>
+          </article>
+          <article class="card">
+            <h3>Fiesta Total</h3>
+            <p class="muted">Hasta 6 horas - DJ + animación + iluminación completa</p>
+            <a class="btn btn--primary" href="https://wa.me/5493874075595" target="_blank" rel="noopener noreferrer">Consultar presupuesto</a>
+          </article>
+          <article class="card">
+            <h3>Boda Premium</h3>
+            <p class="muted">Cobertura integral - ceremonia + recepción + efectos especiales</p>
+            <a class="btn btn--primary" href="https://wa.me/5493874075595" target="_blank" rel="noopener noreferrer">Consultar presupuesto</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="galeria">
+        <h2>Ambientes de show</h2>
+        <div class="gallery" aria-label="Galería visual de estilos de iluminación">
+          <img src="img/1.jpg" alt="Evento con luces y pista de baile Sonido 100" loading="lazy" />
+          <img src="img/2.jpg" alt="Ambientación de iluminación para fiesta" loading="lazy" />
+          <img src="img/3.jpg" alt="Show de sonido e iluminación en evento" loading="lazy" />
+          <img src="img/4.jpg" alt="Cabina y ambientación para evento social" loading="lazy" />
+        </div>
+      </section>
+
+      <section id="contacto">
+        <div class="contact">
+          <h2>¿Armamos tu evento?</h2>
+          <p class="muted">Disponible para casamientos, cumpleaños, fiesta de la virgen y fiestas del recuerdo.</p>
+          <p><strong>Teléfono:</strong> 0387 154075595</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="https://wa.me/5493874075595" target="_blank" rel="noopener noreferrer">Hablar por WhatsApp</a>
+            <a class="btn btn--ghost" href="https://www.facebook.com/sonido100" target="_blank" rel="noopener noreferrer">Facebook Sonido 100</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Imagen ampliada">
+      <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Cerrar imagen ampliada">Cerrar</button>
+      <img id="lightboxImage" src="" alt="" />
+    </div>
+
+      <footer>© <span id="year"></span> Sonido 100 — Experiencia musical profesional.</footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
+
