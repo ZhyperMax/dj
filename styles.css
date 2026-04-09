@@ -78,6 +78,9 @@ body.no-scroll {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   font-weight: 800;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -85,7 +88,19 @@ body.no-scroll {
   white-space: nowrap;
 }
 
-.brand span {
+.brand__logo {
+  width: 34px;
+  height: 34px;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.brand__text {
+  color: #fff;
+}
+
+.brand__accent {
   color: var(--secondary);
 }
 
@@ -135,6 +150,14 @@ section {
   background: linear-gradient(145deg, rgba(17, 17, 26, 0.9), rgba(10, 10, 18, 0.82));
   padding: 2rem 1.3rem;
   box-shadow: 0 22px 55px rgba(0, 0, 0, 0.42);
+}
+
+.hero__logo {
+  width: min(100%, 560px);
+  margin: 0 auto 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
 }
 
 .kicker {
@@ -342,6 +365,34 @@ footer {
   padding: 1rem 0 2rem;
 }
 
+.site-credit {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.credit-link {
+  text-decoration: none;
+  border: 1px solid var(--card-border);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 999px;
+  min-height: 40px;
+  padding: 0.45rem 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.credit-link:hover,
+.credit-link:focus-visible {
+  background: rgba(138, 43, 255, 0.2);
+  outline: none;
+}
+
 @media (max-width: 719px) {
   .menu {
     position: sticky;
@@ -359,6 +410,12 @@ footer {
 
   .brand {
     text-align: center;
+    justify-content: center;
+  }
+
+  .brand__logo {
+    width: 30px;
+    height: 30px;
   }
 
   .nav {
@@ -386,6 +443,11 @@ footer {
   .hero__box {
     padding: 1.3rem 0.95rem;
     border-radius: var(--radius);
+  }
+
+  .hero__logo {
+    margin-bottom: 0.8rem;
+    border-radius: 10px;
   }
 
   .kicker {
@@ -433,6 +495,10 @@ footer {
     min-width: 56px;
     padding-inline: 1.1rem;
     font-size: 0.95rem;
+  }
+
+  .site-credit {
+    flex-direction: column;
   }
 }
 
